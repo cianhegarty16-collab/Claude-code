@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BeanHive — Fresh wraps, all-day breakfast and great coffee in Ireland. Choose your filling, choose your style.">
+  <title>BeanHive | Fresh Wraps &amp; All-Day Breakfast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">
+        <!-- Replace src with your actual logo file -->
+        <svg class="nav__logo-mark" width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 18c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M16 12V9M13 13l-2-2M19 13l2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M22 18c1.5 0 2.5-.8 2.5-2s-1-2-2.5-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        BeanHive
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" class="nav__link">Our Story</a></li>
+        <li><a href="#menu" class="nav__link">Menu</a></li>
+        <li><a href="#locations" class="nav__link">Locations</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Order Now</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__visual">
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+        <div class="hero__glow hero__glow--3"></div>
+        <!-- Replace this div with an <img> tag pointing to your hero photo -->
+        <div class="hero__photo-placeholder" aria-hidden="true">
+          <div class="hero__photo-inner"></div>
+        </div>
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <span class="hero__eyebrow">Fresh · Handcrafted · Ireland</span>
+        <h1 class="hero__headline">
+          <span class="hero__word">Choose your</span>
+          <span class="hero__word hero__word--italic">filling,</span>
+          <span class="hero__word">choose your</span>
+          <span class="hero__word hero__word--italic">style.</span>
+        </h1>
+        <p class="hero__sub">
+          12 signature wraps, all-day Irish breakfast, and the coffee to match.
+          Fresh every morning. Gone by close.
+        </p>
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--primary">See the Menu</a>
+          <a href="#locations" class="btn btn--ghost">Find a Location</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span class="hero__scroll-label">Scroll</span>
+        <div class="hero__scroll-bar"></div>
+      </a>
+    </section>
+
+    <!-- ===================== TICKER ===================== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>12 Signature Wraps</span><span class="ticker__sep">·</span>
+        <span>All-Day Breakfast</span><span class="ticker__sep">·</span>
+        <span>Fresh Every Morning</span><span class="ticker__sep">·</span>
+        <span>Vegan Options</span><span class="ticker__sep">·</span>
+        <span>Gluten-Free Available</span><span class="ticker__sep">·</span>
+        <span>Choose Your Style</span><span class="ticker__sep">·</span>
+        <span>12 Signature Wraps</span><span class="ticker__sep">·</span>
+        <span>All-Day Breakfast</span><span class="ticker__sep">·</span>
+        <span>Fresh Every Morning</span><span class="ticker__sep">·</span>
+        <span>Vegan Options</span><span class="ticker__sep">·</span>
+        <span>Gluten-Free Available</span><span class="ticker__sep">·</span>
+        <span>Choose Your Style</span><span class="ticker__sep">·</span>
+      </div>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="about">
+      <div class="about__container">
+        <div class="about__media reveal" data-delay="0">
+          <!-- Replace with your actual about/interior photo -->
+          <div class="about__photo-placeholder">
+            <div class="about__photo-inner"></div>
+          </div>
+          <div class="about__badge reveal" data-delay="200">
+            <span class="about__badge-line1">Fresh</span>
+            <span class="about__badge-line2">Daily</span>
+          </div>
+        </div>
+        <div class="about__text">
+          <span class="eyebrow reveal" data-delay="0">Our Story</span>
+          <h2 class="display-heading reveal" data-delay="80">
+            Food made with<br><em>real ingredients</em>
+          </h2>
+          <p class="about__body reveal" data-delay="160">
+            BeanHive started with one idea: food that's actually good for you should taste
+            incredible too. We source fresh produce every morning, prep everything in-house,
+            and build each wrap to order so nothing sits under a heat lamp.
+          </p>
+          <p class="about__body reveal" data-delay="200">
+            Whether you're grabbing a quick lunch or settling in for a full Irish,
+            you're getting the same care and quality in every bite.
+          </p>
+          <div class="about__stats">
+            <div class="about__stat reveal" data-delay="260">
+              <span class="stat-num" data-count="12">0</span>
+              <span class="stat-label">Signature Wraps</span>
+            </div>
+            <div class="about__stat reveal" data-delay="320">
+              <span class="stat-num" data-count="4">0</span>
+              <span class="stat-label">Breakfast Options</span>
+            </div>
+            <div class="about__stat reveal" data-delay="380">
+              <span class="stat-num" data-count="100">0</span>
+              <span class="stat-label">% Fresh Daily</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MENU ===================== -->
+    <section class="menu" id="menu">
+      <div class="menu__container">
+        <div class="menu__header">
+          <span class="eyebrow reveal" data-delay="0">What We Serve</span>
+          <h2 class="display-heading reveal" data-delay="80">The Menu</h2>
+          <p class="menu__intro reveal" data-delay="140">
+            Every wrap is made fresh to order. Ask about allergens — we're always happy to help.
+          </p>
+        </div>
+
+        <div class="menu__tabs reveal" data-delay="0" role="tablist">
+          <button class="menu__tab is-active" data-filter="wraps" role="tab" aria-selected="true">Wraps</button>
+          <button class="menu__tab" data-filter="breakfast" role="tab" aria-selected="false">Breakfast</button>
+          <button class="menu__tab" data-filter="beverages" role="tab" aria-selected="false">Beverages</button>
+          <button class="menu__tab" data-filter="salads" role="tab" aria-selected="false">Salads</button>
+        </div>
+
+        <!-- WRAPS -->
+        <div class="menu__panel is-active" id="panel-wraps">
+          <p class="menu__panel-note">All wraps €11.00 · Choose your filling · Choose your style</p>
+          <div class="menu__grid">
+
+            <article class="wrap-card reveal" data-delay="0">
+              <div class="wrap-card__num">01</div>
+              <!-- Replace with actual photo -->
+              <div class="wrap-card__img-wrap"><div class="wrap-card__img-ph ph--warm"></div></div>
+              <div class="wrap-card__body">
+                <h3 class="wrap-card__name">Mr. BeanHive</h3>
+                <p class="wrap-card__desc">Flavoured Grilled Bacon, or choice of meat, with your toppings.</p>
+                <span class="wrap-card__price">€11.00</span>
+              </div>
+            </article>
+
+            <article class="wrap-card reveal" data-delay="60">
+              <div class="wrap-card__num">02</div>
+              <div class="wrap-card__img-wrap"><div class="wrap-card__img-ph ph--golden"></div></div>
+              <div class="wrap-card__body">
+                <h3 class="wrap-card__name">The Perfect</h3>
+                <p class="wrap-card__desc">Chicken (or choice of meat), Grilled Bacon, with all the good stuff.</p>
+                <span class="wrap-card__price">€11.00</span>
+              </div>
+            </article>
+
+            <article class="wrap-card reveal" data-delay="120">
+              <div class="wrap-card__num">03</div>
+              <div class="wrap-card__img-wrap"><div class="wrap-card__img-ph ph--rich"></div></div>
+              <div class="wrap-card__body">
+                <h3 class="wrap-card__name">The Queen</h3>
+                <p class="wrap-card__desc">BeanHive Beef (or choice of meat), Black Pepper sauce and fresh toppings.</p>
+                <span class="wrap-card__price">€11.00</span>
+              </div>
+            </article>
+
+            <article class="wrap-card reveal" data-delay="0">
+              <div class="wrap-card__num">04</div>
+              <div class="wrap-card__img-wrap"><div class="wrap-card__img-ph ph--warm"></div></div>
+              <div class="wrap-card__body">
+                <h3 class="wrap-card__name">The Classic</h3>
+                <p class="wrap-card__desc">Ham (or choice of meat), Cheddar Cheese, simple and always satisfying.</p>
+                <span class="wrap-card__price">€11.00</span>
+              </div>
+            </article>
+
+            <article class="wrap-card reveal" data-delay="60">
+              <div class="wrap-card__num">05</div>
+              <div class="wrap-card__img-wrap"><div class="wrap-card__img-ph ph--golden"></div></div>
+              <div class="wrap-card__body">
+                <h3 class="wrap-card__name">The BBQ</h3>
+                <p class="wrap-card__desc">Smoky BBQ Chicken (or choice of meat), crispy and loaded.</p>
+                <span class="wrap-card__price">€11.00</span>
+              </div>
+            </article>
+
+            <article class="wrap-card reveal" data-delay="120">
+              <div class="wrap-card__num">06</div>
+              <div class="wrap-card__img-wrap"><div class="wrap-card__img-ph ph--rich"></div></div>
+              <div class="wrap-card__body">
+                <h3 class="wrap-card__name">BH Chicken</h3>
+                <p class="wrap-card__desc">BeanHive's signature chicken recipe with house sauce and toppings.</p>
+                <span class="wrap-card__price">€11.00</span>
+              </div>
+            </article>
+
+            <article class="wrap-card reveal" data-delay="0">
+              <div class="wrap-card__num">07</div>
+              <div class="wrap-card__img-wrap"><div class="wrap-card__img-ph ph--warm"></div></div>
+              <div class="wrap-card__body">
+                <h3 class="wrap-card__name">The Breakfast Wrap</h3>
+                <p class="wrap-card__desc">2 Fried Eggs, Grilled Bacon (or choice of meat), morning perfection.</p>
+                <span class="wrap-card__price">€11.00</span>
+              </div>
+            </article>
+
+            <article class="wrap-card reveal" data-delay="60">
+              <div class="wrap-card__num">08</div>
+              <div class="wrap-card__img-wrap"><div class="wrap-card__img-ph ph--golden"></div></div>
+              <div class="wrap-card__body">
+                <h3 class="wrap-card__name">The Mex</h3>
+                <p class="wrap-card__desc">BeanHive Chicken with a Mexican twist — spiced, fresh, bold.</p>
+                <span class="wrap-card__price">€11.00</span>
+              </div>
+            </article>
+
+            <article class="wrap-card reveal" data-delay="120">
+              <div class="wrap-card__num">09</div>
+              <div class="wrap-card__img-wrap"><div class="wrap-card__img-ph ph--green"></div></div>
+              <div class="wrap-card__body">
+                <h3 class="wrap-card__name">The Italian</h3>
+                <p class="wrap-card__desc">Chicken (or choice of meat), Mozzarella, Italian dressing and fresh veg.</p>
+                <span class="wrap-card__price">€11.00</span>
+              </div>
+            </article>
+
+            <article class="wrap-card reveal" data-delay="0">
+              <div class="wrap-card__num">10</div>
+              <div class="wrap-card__img-wrap"><div class="wrap-card__img-ph ph--green"></div></div>
+              <div class="wrap-card__body">
+                <h3 class="wrap-card__name">The Avo</h3>
+                <p class="wrap-card__desc">Avocado, 2 Fried Eggs, Grilled Bacon (or choice) — the fan favourite.</p>
+                <span class="wrap-card__price">€11.00</span>
+              </div>
+            </article>
+
+            <article class="wrap-card reveal" data-delay="60">
+              <div class="wrap-card__num">11</div>
+              <div class="wrap-card__img-wrap"><div class="wrap-card__img-ph ph--green"></div></div>
+              <div class="wrap-card__body">
+                <h3 class="wrap-card__name">Back to Basics</h3>
+                <p class="wrap-card__desc">Roasted Sweet Potatoes, Hash Brown, and wholesome fresh toppings.</p>
+                <span class="wrap-card__price">€11.00</span>
+              </div>
+            </article>
+
+            <article class="wrap-card wrap-card--vegan reveal" data-delay="120">
+              <div class="wrap-card__num">12</div>
+              <span class="wrap-card__badge">Vegan</span>
+              <div class="wrap-card__img-wrap"><div class="wrap-card__img-ph ph--green"></div></div>
+              <div class="wrap-card__body">
+                <h3 class="wrap-card__name">The Green</h3>
+                <p class="wrap-card__desc">Tofu, Roasted Mushrooms &amp; Mixed Veg — plant-powered and packed with flavour.</p>
+                <span class="wrap-card__price">€11.00</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- BREAKFAST -->
+        <div class="menu__panel" id="panel-breakfast">
+          <p class="menu__panel-note">Served all day · Cooked fresh to order</p>
+          <div class="menu__grid menu__grid--breakfast">
+
+            <article class="breakfast-card reveal" data-delay="0">
+              <div class="breakfast-card__img-wrap"><div class="breakfast-card__img-ph ph--warm"></div></div>
+              <div class="breakfast-card__body">
+                <h3 class="breakfast-card__name">Irish Breakfast</h3>
+                <p class="breakfast-card__desc">2 Bacon, 2 Sausages, 1 Fried Egg, Toast and more.</p>
+                <span class="breakfast-card__price">€15.00</span>
+              </div>
+            </article>
+
+            <article class="breakfast-card reveal" data-delay="80">
+              <div class="breakfast-card__img-wrap"><div class="breakfast-card__img-ph ph--golden"></div></div>
+              <div class="breakfast-card__body">
+                <h3 class="breakfast-card__name">Super Breakfast</h3>
+                <p class="breakfast-card__desc">2 Bacon, 2 Sausages, 1 Fried Egg, extras and all the trimmings.</p>
+                <span class="breakfast-card__price">€17.50</span>
+              </div>
+            </article>
+
+            <article class="breakfast-card reveal" data-delay="160">
+              <div class="breakfast-card__img-wrap"><div class="breakfast-card__img-ph ph--green"></div></div>
+              <div class="breakfast-card__body">
+                <h3 class="breakfast-card__name">Vegetarian Breakfast</h3>
+                <p class="breakfast-card__desc">Vegan Sausages, 1 Fried Egg, grilled veg and toast.</p>
+                <span class="breakfast-card__price">€17.50</span>
+              </div>
+            </article>
+
+            <article class="breakfast-card breakfast-card--vegan reveal" data-delay="240">
+              <span class="wrap-card__badge">Vegan</span>
+              <div class="breakfast-card__img-wrap"><div class="breakfast-card__img-ph ph--green"></div></div>
+              <div class="breakfast-card__body">
+                <h3 class="breakfast-card__name">Vegan Breakfast</h3>
+                <p class="breakfast-card__desc">Vegan Sausages, Vegan Pudding, roasted veg and toast.</p>
+                <span class="breakfast-card__price">€17.50</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- BEVERAGES -->
+        <div class="menu__panel" id="panel-beverages">
+          <p class="menu__panel-note">Hot &amp; Cold · All freshly prepared</p>
+          <div class="menu__list">
+            <div class="menu-list-item reveal" data-delay="0">
+              <span class="menu-list-item__name">Americano</span>
+              <span class="menu-list-item__dots"></span>
+              <span class="menu-list-item__price">€2.80</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="40">
+              <span class="menu-list-item__name">Flat White</span>
+              <span class="menu-list-item__dots"></span>
+              <span class="menu-list-item__price">€3.50</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="80">
+              <span class="menu-list-item__name">Latte</span>
+              <span class="menu-list-item__dots"></span>
+              <span class="menu-list-item__price">€3.80</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="120">
+              <span class="menu-list-item__name">Cappuccino</span>
+              <span class="menu-list-item__dots"></span>
+              <span class="menu-list-item__price">€3.80</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="160">
+              <span class="menu-list-item__name">Mocha</span>
+              <span class="menu-list-item__dots"></span>
+              <span class="menu-list-item__price">€4.00</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="200">
+              <span class="menu-list-item__name">Hot Chocolate</span>
+              <span class="menu-list-item__dots"></span>
+              <span class="menu-list-item__price">€3.80</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="240">
+              <span class="menu-list-item__name">Fresh Orange Juice</span>
+              <span class="menu-list-item__dots"></span>
+              <span class="menu-list-item__price">€3.50</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="280">
+              <span class="menu-list-item__name">Iced Coffee</span>
+              <span class="menu-list-item__dots"></span>
+              <span class="menu-list-item__price">€4.20</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="320">
+              <span class="menu-list-item__name">Sparkling / Still Water</span>
+              <span class="menu-list-item__dots"></span>
+              <span class="menu-list-item__price">€2.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SALADS -->
+        <div class="menu__panel" id="panel-salads">
+          <p class="menu__panel-note">Fresh every day · Dressed to order</p>
+          <div class="menu__list">
+            <div class="menu-list-item reveal" data-delay="0">
+              <div>
+                <span class="menu-list-item__name">Classic Caesar</span>
+                <p class="menu-list-item__sub">Cos lettuce, parmesan, croutons, Caesar dressing</p>
+              </div>
+              <span class="menu-list-item__price">€9.00</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="60">
+              <div>
+                <span class="menu-list-item__name">BH Chicken Salad</span>
+                <p class="menu-list-item__sub">BeanHive chicken, mixed leaves, house dressing</p>
+              </div>
+              <span class="menu-list-item__price">€10.50</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="120">
+              <div>
+                <span class="menu-list-item__name">Avo &amp; Egg Salad</span>
+                <p class="menu-list-item__sub">Avocado, boiled egg, mixed leaves, lemon vinaigrette</p>
+              </div>
+              <span class="menu-list-item__price">€10.00</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="180">
+              <div>
+                <span class="menu-list-item__name">Vegan Garden Bowl</span>
+                <p class="menu-list-item__sub">Roasted veg, quinoa, mixed leaves, tahini dressing</p>
+              </div>
+              <span class="menu-list-item__price">€10.00</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== FEATURE STRIP ===================== -->
+    <section class="feature-strip">
+      <div class="feature-strip__bg"></div>
+      <div class="feature-strip__overlay"></div>
+      <div class="feature-strip__content">
+        <span class="eyebrow eyebrow--light reveal" data-delay="0">The BeanHive Difference</span>
+        <h2 class="feature-strip__heading reveal" data-delay="80">
+          Fresh is not a<br><em>marketing word.</em>
+        </h2>
+        <p class="feature-strip__sub reveal" data-delay="160">
+          We prep every morning. No frozen fillings, no reheated shortcuts.
+          If it's not fresh enough for us, it's not going in your wrap.
+        </p>
+        <a href="#about" class="btn btn--outline-light reveal" data-delay="240">Our Story</a>
+      </div>
+    </section>
+
+    <!-- ===================== LOCATIONS & CONTACT ===================== -->
+    <section class="locations" id="locations">
+      <div class="locations__container">
+
+        <div class="locations__col">
+          <span class="eyebrow reveal" data-delay="0">Find Us</span>
+          <h2 class="display-heading reveal" data-delay="80">Our Locations</h2>
+          <p class="locations__intro reveal" data-delay="140">
+            Walk in, sit down, or grab and go — we're set up for all of it.
+          </p>
+
+          <div class="location-card reveal" data-delay="0">
+            <div class="location-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h3 class="location-card__name">Dublin City Centre</h3>
+              <p class="location-card__address">Update with your full address</p>
+              <div class="location-card__hours">
+                <div class="hours-row"><span>Mon – Fri</span><span>7:00 – 18:00</span></div>
+                <div class="hours-row"><span>Sat – Sun</span><span>8:00 – 17:00</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-card reveal" data-delay="80">
+            <div class="location-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h3 class="location-card__name">Second Location</h3>
+              <p class="location-card__address">Update with your full address</p>
+              <div class="location-card__hours">
+                <div class="hours-row"><span>Mon – Fri</span><span>7:30 – 17:30</span></div>
+                <div class="hours-row"><span>Sat – Sun</span><span>8:30 – 16:30</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="locations__col" id="contact">
+          <span class="eyebrow reveal" data-delay="0">Get in Touch</span>
+          <h2 class="display-heading reveal" data-delay="80">Say Hello</h2>
+          <p class="locations__intro reveal" data-delay="140">
+            Catering enquiry? Feedback? Just want to say hi?
+            We read every message.
+          </p>
+          <form class="contact-form reveal" id="contactForm" novalidate data-delay="200">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Jane" autocomplete="given-name" required>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Doe" autocomplete="family-name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Topic</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic…</option>
+                <option value="general">General Enquiry</option>
+                <option value="catering">Catering</option>
+                <option value="wholesale">Wholesale / Trade</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="What's on your mind?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">BeanHive</a>
+        <p class="footer__tagline">Fresh wraps &amp; all-day breakfast.<br>Made with care, every single day.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <div class="footer__nav-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#menu">Wraps</a></li>
+            <li><a href="#menu">All-Day Breakfast</a></li>
+            <li><a href="#menu">Beverages</a></li>
+            <li><a href="#menu">Salads</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-col">
+          <h4>Info</h4>
+          <ul>
+            <li><a href="#">Allergen Info</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 BeanHive. All rights reserved.</p>
+      <p>Made in Ireland 🇮🇪</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
