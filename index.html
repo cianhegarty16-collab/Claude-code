@@ -121,9 +121,123 @@
     <section class="about" id="about">
       <div class="about__container">
         <div class="about__media reveal" data-delay="0">
-          <!-- Replace with your actual about/interior photo -->
           <div class="about__photo-placeholder">
-            <div class="about__photo-inner"></div>
+            <!-- About section illustration: café overhead scene -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500"
+                 preserveAspectRatio="xMidYMid slice"
+                 style="position:absolute;inset:0;width:100%;height:100%;display:block;"
+                 aria-hidden="true">
+              <defs>
+                <linearGradient id="abtBg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#F8B020"/>
+                  <stop offset="50%" stop-color="#C87000"/>
+                  <stop offset="100%" stop-color="#7A3810"/>
+                </linearGradient>
+                <radialGradient id="coffeeTop" cx="38%" cy="35%" r="60%">
+                  <stop offset="0%" stop-color="#3D1A06"/>
+                  <stop offset="100%" stop-color="#0D0402"/>
+                </radialGradient>
+                <radialGradient id="vigAbt" cx="50%" cy="50%" r="70%">
+                  <stop offset="55%" stop-color="transparent"/>
+                  <stop offset="100%" stop-color="rgba(60,20,5,0.4)"/>
+                </radialGradient>
+              </defs>
+
+              <!-- Background -->
+              <rect width="400" height="500" fill="url(#abtBg)"/>
+
+              <!-- Large subtle ring -->
+              <circle cx="200" cy="250" r="230" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="45"/>
+
+              <!-- Brand hexagons -->
+              <path d="M342 38 L367 24 L392 38 L392 66 L367 80 L342 66 Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+              <path d="M18 418 L40 405 L62 418 L62 444 L40 457 L18 444 Z" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1.5"/>
+              <path d="M355 430 L372 420 L389 430 L389 450 L372 460 L355 450 Z" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+              <!-- Coffee cup saucer -->
+              <ellipse cx="152" cy="248" rx="88" ry="27" fill="#F0DFB5"/>
+              <ellipse cx="152" cy="243" rx="74" ry="21" fill="#FDF4E2"/>
+
+              <!-- Cup body (top-down view, white cup) -->
+              <circle cx="152" cy="220" r="66" fill="#F8F0E0"/>
+              <!-- Coffee surface -->
+              <circle cx="152" cy="220" r="56" fill="url(#coffeeTop)"/>
+              <!-- Latte art swirl -->
+              <path d="M133 210 Q150 198 170 210 Q158 226 140 226 Q128 220 133 210 Z" fill="rgba(190,130,45,0.45)"/>
+              <circle cx="165" cy="232" r="8" fill="none" stroke="rgba(190,130,45,0.30)" stroke-width="2"/>
+              <!-- Cup rim -->
+              <circle cx="152" cy="220" r="66" fill="none" stroke="rgba(210,170,90,0.15)" stroke-width="3"/>
+
+              <!-- Steam wisps -->
+              <path d="M130 148 Q119 124 130 100 Q141 76 130 52" stroke="rgba(255,255,255,0.52)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <path d="M152 143 Q139 116 152 89 Q165 62 152 36" stroke="rgba(255,255,255,0.52)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <path d="M174 148 Q186 123 173 98 Q160 73 173 48" stroke="rgba(255,255,255,0.52)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+              <!-- Ciabatta roll -->
+              <g transform="translate(270 298) rotate(-10)">
+                <rect x="-80" y="-42" width="160" height="84" rx="42" fill="#C07828"/>
+                <rect x="-74" y="-34" width="148" height="68" rx="34" fill="#E29040"/>
+                <line x1="-54" y1="-10" x2="54" y2="-10" stroke="#B06018" stroke-width="2" opacity="0.45"/>
+                <line x1="-54" y1="4"  x2="54" y2="4"  stroke="#B06018" stroke-width="1.5" opacity="0.30"/>
+                <ellipse cx="-28" cy="-18" rx="24" ry="10" fill="rgba(255,220,130,0.28)"/>
+                <!-- Sesame seeds -->
+                <circle cx="-10" cy="-28" r="3" fill="#D09040" opacity="0.5"/>
+                <circle cx="14"  cy="-32" r="3" fill="#D09040" opacity="0.5"/>
+                <circle cx="38"  cy="-28" r="3" fill="#D09040" opacity="0.5"/>
+              </g>
+
+              <!-- Scattered coffee beans -->
+              <g transform="translate(60 148) rotate(30)">
+                <ellipse rx="11" ry="7" fill="#2A0E04"/>
+                <line x1="-9" y1="0" x2="9" y2="0" stroke="#5A2810" stroke-width="1.5"/>
+              </g>
+              <g transform="translate(336 196) rotate(-22)">
+                <ellipse rx="11" ry="7" fill="#2A0E04"/>
+                <line x1="-9" y1="0" x2="9" y2="0" stroke="#5A2810" stroke-width="1.5"/>
+              </g>
+              <g transform="translate(48 366) rotate(14)">
+                <ellipse rx="9" ry="6" fill="#2A0E04"/>
+                <line x1="-7" y1="0" x2="7" y2="0" stroke="#5A2810" stroke-width="1.5"/>
+              </g>
+              <g transform="translate(348 388) rotate(-38)">
+                <ellipse rx="9" ry="6" fill="#2A0E04"/>
+                <line x1="-7" y1="0" x2="7" y2="0" stroke="#5A2810" stroke-width="1.5"/>
+              </g>
+              <g transform="translate(292 105) rotate(18)">
+                <ellipse rx="8" ry="5" fill="#2A0E04"/>
+                <line x1="-6" y1="0" x2="6" y2="0" stroke="#5A2810" stroke-width="1.5"/>
+              </g>
+              <g transform="translate(78 460) rotate(-12)">
+                <ellipse rx="8" ry="5" fill="#2A0E04"/>
+                <line x1="-6" y1="0" x2="6" y2="0" stroke="#5A2810" stroke-width="1.5"/>
+              </g>
+              <g transform="translate(360 310) rotate(5)">
+                <ellipse rx="7" ry="4.5" fill="#2A0E04"/>
+                <line x1="-5" y1="0" x2="5" y2="0" stroke="#5A2810" stroke-width="1.5"/>
+              </g>
+
+              <!-- Fresh herbs / basil leaves -->
+              <g transform="translate(205 408) rotate(22)">
+                <path d="M0 0 C-13 -22 14 -38 14 -22 C14 0 -13 16 0 0 Z" fill="#489228"/>
+                <line x1="0" y1="0" x2="9" y2="-20" stroke="#387018" stroke-width="1.5"/>
+              </g>
+              <g transform="translate(82 285) rotate(-18)">
+                <path d="M0 0 C-11 -19 12 -33 12 -18 C12 0 -11 14 0 0 Z" fill="#489228"/>
+                <line x1="0" y1="0" x2="8" y2="-16" stroke="#387018" stroke-width="1.5"/>
+              </g>
+              <g transform="translate(352 460) rotate(10)">
+                <path d="M0 0 C-8 -14 9 -24 9 -13 C9 0 -8 10 0 0 Z" fill="#4A9830"/>
+                <line x1="0" y1="0" x2="5" y2="-12" stroke="#387018" stroke-width="1.5"/>
+              </g>
+
+              <!-- Seasoning on ciabatta -->
+              <circle cx="256" cy="270" r="2.5" fill="#C84020" opacity="0.8" transform="rotate(-10 270 298)"/>
+              <circle cx="272" cy="278" r="2"   fill="#C84020" opacity="0.7" transform="rotate(-10 270 298)"/>
+              <circle cx="290" cy="268" r="2.5" fill="#2A7010" opacity="0.8" transform="rotate(-10 270 298)"/>
+
+              <!-- Vignette -->
+              <rect width="400" height="500" fill="url(#vigAbt)"/>
+            </svg>
           </div>
           <div class="about__badge reveal" data-delay="200">
             <span class="about__badge-line1">Fresh</span>
