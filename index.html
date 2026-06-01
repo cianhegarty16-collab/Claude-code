@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BeanHive — Fresh wraps, all-day breakfast and great coffee in Ireland. Choose your filling, choose your style.">
-  <title>BeanHive | Fresh Wraps &amp; All-Day Breakfast</title>
+  <meta name="description" content="BeanHive — Fresh ciabattas, all-day breakfast and great coffee in Dublin. Choose your filling, choose your style.">
+  <title>BeanHive | Fresh Ciabattas &amp; All-Day Breakfast</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
@@ -16,12 +16,20 @@
   <nav class="nav" id="nav">
     <div class="nav__container">
       <a href="#" class="nav__logo">
-        <!-- Replace src with your actual logo file -->
-        <svg class="nav__logo-mark" width="32" height="32" viewBox="0 0 32 32" fill="none">
-          <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M10 18c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          <path d="M16 12V9M13 13l-2-2M19 13l2-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          <path d="M22 18c1.5 0 2.5-.8 2.5-2s-1-2-2.5-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <svg class="nav__logo-mark" width="34" height="38" viewBox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="34" y2="38" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#F59E0B"/>
+              <stop offset="100%" stop-color="#8B4513"/>
+            </linearGradient>
+          </defs>
+          <path d="M17 1 L33 10.2 L33 27.8 L17 37 L1 27.8 L1 10.2 Z" fill="url(#logoGrad)"/>
+          <rect x="10.5" y="13" width="12" height="9.5" rx="1.5" fill="white" opacity="0.95"/>
+          <path d="M22.5 16 Q26.5 16 26.5 18 Q26.5 20 22.5 20" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <line x1="12.5" y1="22.5" x2="21.5" y2="22.5" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+          <path d="M14 11.5 Q15 9.5 14 7.5" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.55"/>
+          <path d="M17.5 10.5 Q18.5 8.5 17.5 6.5" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.55"/>
+          <path d="M21 11.5 Q22 9.5 21 7.5" stroke="white" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.55"/>
         </svg>
         BeanHive
       </a>
@@ -41,15 +49,32 @@
 
     <!-- ===================== HERO ===================== -->
     <section class="hero" id="hero">
-      <div class="hero__visual">
-        <div class="hero__glow hero__glow--1"></div>
-        <div class="hero__glow hero__glow--2"></div>
-        <div class="hero__glow hero__glow--3"></div>
-        <!-- Replace this div with an <img> tag pointing to your hero photo -->
-        <div class="hero__photo-placeholder" aria-hidden="true">
-          <div class="hero__photo-inner"></div>
+      <div class="hero__canvas" aria-hidden="true">
+        <div class="hero__mesh"></div>
+        <div class="hero__hex hx-1"></div>
+        <div class="hero__hex hx-2"></div>
+        <div class="hero__hex hx-3"></div>
+        <div class="hero__hex hx-4"></div>
+        <div class="hero__hex hx-5"></div>
+        <div class="hero__hex hx-6"></div>
+        <div class="hero__hex hx-7"></div>
+        <div class="hero__hex hx-8"></div>
+        <div class="hero__blob blob-1"></div>
+        <div class="hero__blob blob-2"></div>
+        <div class="hero__blob blob-3"></div>
+        <div class="hero__particles">
+          <span class="hero__particle pt-1"></span>
+          <span class="hero__particle pt-2"></span>
+          <span class="hero__particle pt-3"></span>
+          <span class="hero__particle pt-4"></span>
+          <span class="hero__particle pt-5"></span>
+          <span class="hero__particle pt-6"></span>
+          <span class="hero__particle pt-7"></span>
+          <span class="hero__particle pt-8"></span>
+          <span class="hero__particle pt-9"></span>
+          <span class="hero__particle pt-10"></span>
         </div>
-        <div class="hero__overlay"></div>
+        <div class="hero__vignette"></div>
       </div>
       <div class="hero__content">
         <span class="hero__eyebrow">Fresh · Handcrafted · Ireland</span>
@@ -60,7 +85,7 @@
           <span class="hero__word hero__word--italic">style.</span>
         </h1>
         <p class="hero__sub">
-          12 signature wraps, all-day Irish breakfast, and the coffee to match.
+          12 signature ciabattas, all-day Irish breakfast, and the coffee to match.
           Fresh every morning. Gone by close.
         </p>
         <div class="hero__actions">
@@ -77,13 +102,13 @@
     <!-- ===================== TICKER ===================== -->
     <div class="ticker" aria-hidden="true">
       <div class="ticker__track">
-        <span>12 Signature Wraps</span><span class="ticker__sep">·</span>
+        <span>12 Signature Ciabattas</span><span class="ticker__sep">·</span>
         <span>All-Day Breakfast</span><span class="ticker__sep">·</span>
         <span>Fresh Every Morning</span><span class="ticker__sep">·</span>
         <span>Vegan Options</span><span class="ticker__sep">·</span>
         <span>Gluten-Free Available</span><span class="ticker__sep">·</span>
         <span>Choose Your Style</span><span class="ticker__sep">·</span>
-        <span>12 Signature Wraps</span><span class="ticker__sep">·</span>
+        <span>12 Signature Ciabattas</span><span class="ticker__sep">·</span>
         <span>All-Day Breakfast</span><span class="ticker__sep">·</span>
         <span>Fresh Every Morning</span><span class="ticker__sep">·</span>
         <span>Vegan Options</span><span class="ticker__sep">·</span>
@@ -113,7 +138,7 @@
           <p class="about__body reveal" data-delay="160">
             BeanHive started with one idea: food that's actually good for you should taste
             incredible too. We source fresh produce every morning, prep everything in-house,
-            and build each wrap to order so nothing sits under a heat lamp.
+            and build each ciabatta to order so nothing sits under a heat lamp.
           </p>
           <p class="about__body reveal" data-delay="200">
             Whether you're grabbing a quick lunch or settling in for a full Irish,
@@ -122,7 +147,7 @@
           <div class="about__stats">
             <div class="about__stat reveal" data-delay="260">
               <span class="stat-num" data-count="12">0</span>
-              <span class="stat-label">Signature Wraps</span>
+              <span class="stat-label">Signature Ciabattas</span>
             </div>
             <div class="about__stat reveal" data-delay="320">
               <span class="stat-num" data-count="4">0</span>
@@ -144,20 +169,20 @@
           <span class="eyebrow reveal" data-delay="0">What We Serve</span>
           <h2 class="display-heading reveal" data-delay="80">The Menu</h2>
           <p class="menu__intro reveal" data-delay="140">
-            Every wrap is made fresh to order. Ask about allergens — we're always happy to help.
+            Every ciabatta is made fresh to order. Ask about allergens — we're always happy to help.
           </p>
         </div>
 
         <div class="menu__tabs reveal" data-delay="0" role="tablist">
-          <button class="menu__tab is-active" data-filter="wraps" role="tab" aria-selected="true">Wraps</button>
+          <button class="menu__tab is-active" data-filter="ciabattas" role="tab" aria-selected="true">Ciabattas</button>
           <button class="menu__tab" data-filter="breakfast" role="tab" aria-selected="false">Breakfast</button>
           <button class="menu__tab" data-filter="beverages" role="tab" aria-selected="false">Beverages</button>
           <button class="menu__tab" data-filter="salads" role="tab" aria-selected="false">Salads</button>
         </div>
 
-        <!-- WRAPS -->
-        <div class="menu__panel is-active" id="panel-wraps">
-          <p class="menu__panel-note">All wraps €11.00 · Choose your filling · Choose your style</p>
+        <!-- CIABATTAS -->
+        <div class="menu__panel is-active" id="panel-ciabattas">
+          <p class="menu__panel-note">All ciabattas €11.00 · Choose your filling · Choose your style</p>
           <div class="menu__grid">
 
             <article class="wrap-card reveal" data-delay="0">
@@ -332,52 +357,70 @@
 
         <!-- BEVERAGES -->
         <div class="menu__panel" id="panel-beverages">
-          <p class="menu__panel-note">Hot &amp; Cold · All freshly prepared</p>
+          <p class="menu__panel-note">Hot Drinks · All freshly prepared</p>
           <div class="menu__list">
             <div class="menu-list-item reveal" data-delay="0">
               <span class="menu-list-item__name">Americano</span>
               <span class="menu-list-item__dots"></span>
-              <span class="menu-list-item__price">€2.80</span>
+              <span class="menu-list-item__price">€3.50</span>
             </div>
             <div class="menu-list-item reveal" data-delay="40">
               <span class="menu-list-item__name">Flat White</span>
               <span class="menu-list-item__dots"></span>
-              <span class="menu-list-item__price">€3.50</span>
+              <span class="menu-list-item__price">€4.00</span>
             </div>
             <div class="menu-list-item reveal" data-delay="80">
               <span class="menu-list-item__name">Latte</span>
               <span class="menu-list-item__dots"></span>
-              <span class="menu-list-item__price">€3.80</span>
+              <span class="menu-list-item__price">€4.50</span>
             </div>
             <div class="menu-list-item reveal" data-delay="120">
               <span class="menu-list-item__name">Cappuccino</span>
               <span class="menu-list-item__dots"></span>
-              <span class="menu-list-item__price">€3.80</span>
+              <span class="menu-list-item__price">€4.50</span>
             </div>
             <div class="menu-list-item reveal" data-delay="160">
               <span class="menu-list-item__name">Mocha</span>
               <span class="menu-list-item__dots"></span>
-              <span class="menu-list-item__price">€4.00</span>
+              <span class="menu-list-item__price">€4.70</span>
             </div>
             <div class="menu-list-item reveal" data-delay="200">
               <span class="menu-list-item__name">Hot Chocolate</span>
               <span class="menu-list-item__dots"></span>
-              <span class="menu-list-item__price">€3.80</span>
+              <span class="menu-list-item__price">€4.50</span>
             </div>
             <div class="menu-list-item reveal" data-delay="240">
-              <span class="menu-list-item__name">Fresh Orange Juice</span>
+              <span class="menu-list-item__name">Matcha</span>
               <span class="menu-list-item__dots"></span>
-              <span class="menu-list-item__price">€3.50</span>
+              <span class="menu-list-item__price">€4.70</span>
             </div>
             <div class="menu-list-item reveal" data-delay="280">
-              <span class="menu-list-item__name">Iced Coffee</span>
+              <span class="menu-list-item__name">Chai</span>
               <span class="menu-list-item__dots"></span>
-              <span class="menu-list-item__price">€4.20</span>
+              <span class="menu-list-item__price">€4.70</span>
             </div>
             <div class="menu-list-item reveal" data-delay="320">
-              <span class="menu-list-item__name">Sparkling / Still Water</span>
+              <span class="menu-list-item__name">Tea</span>
               <span class="menu-list-item__dots"></span>
-              <span class="menu-list-item__price">€2.00</span>
+              <span class="menu-list-item__price">€3.00</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="360">
+              <span class="menu-list-item__name">Flavoured Tea</span>
+              <span class="menu-list-item__dots"></span>
+              <span class="menu-list-item__price">€3.80</span>
+            </div>
+            <div class="menu-list-item reveal" data-delay="400">
+              <span class="menu-list-item__name">London Fog Tea</span>
+              <span class="menu-list-item__dots"></span>
+              <span class="menu-list-item__price">€4.70</span>
+            </div>
+            <p class="menu-list-section-label">Baked Goods</p>
+            <div class="menu-list-item reveal" data-delay="440">
+              <div>
+                <span class="menu-list-item__name">Freshly Baked Muffin</span>
+                <p class="menu-list-item__sub">Ask at the counter for today's flavours</p>
+              </div>
+              <span class="menu-list-item__price">€5.00</span>
             </div>
           </div>
         </div>
@@ -388,31 +431,17 @@
           <div class="menu__list">
             <div class="menu-list-item reveal" data-delay="0">
               <div>
-                <span class="menu-list-item__name">Classic Caesar</span>
-                <p class="menu-list-item__sub">Cos lettuce, parmesan, croutons, Caesar dressing</p>
+                <span class="menu-list-item__name">BeanHive Salad</span>
+                <p class="menu-list-item__sub">Signature salad with our house dressing — ask at the counter for today's build</p>
               </div>
-              <span class="menu-list-item__price">€9.00</span>
+              <span class="menu-list-item__price">€15.00</span>
             </div>
-            <div class="menu-list-item reveal" data-delay="60">
+            <div class="menu-list-item reveal" data-delay="80">
               <div>
-                <span class="menu-list-item__name">BH Chicken Salad</span>
-                <p class="menu-list-item__sub">BeanHive chicken, mixed leaves, house dressing</p>
+                <span class="menu-list-item__name">Roasted Mushroom &amp; Chickpea</span>
+                <p class="menu-list-item__sub">Roasted mushrooms, seasoned chickpeas, mixed leaves and house dressing</p>
               </div>
-              <span class="menu-list-item__price">€10.50</span>
-            </div>
-            <div class="menu-list-item reveal" data-delay="120">
-              <div>
-                <span class="menu-list-item__name">Avo &amp; Egg Salad</span>
-                <p class="menu-list-item__sub">Avocado, boiled egg, mixed leaves, lemon vinaigrette</p>
-              </div>
-              <span class="menu-list-item__price">€10.00</span>
-            </div>
-            <div class="menu-list-item reveal" data-delay="180">
-              <div>
-                <span class="menu-list-item__name">Vegan Garden Bowl</span>
-                <p class="menu-list-item__sub">Roasted veg, quinoa, mixed leaves, tahini dressing</p>
-              </div>
-              <span class="menu-list-item__price">€10.00</span>
+              <span class="menu-list-item__price">€15.00</span>
             </div>
           </div>
         </div>
@@ -431,7 +460,7 @@
         </h2>
         <p class="feature-strip__sub reveal" data-delay="160">
           We prep every morning. No frozen fillings, no reheated shortcuts.
-          If it's not fresh enough for us, it's not going in your wrap.
+          If it's not fresh enough for us, it's not going in your ciabatta.
         </p>
         <a href="#about" class="btn btn--outline-light reveal" data-delay="240">Our Story</a>
       </div>
@@ -453,8 +482,8 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
-              <h3 class="location-card__name">Dublin City Centre</h3>
-              <p class="location-card__address">Update with your full address</p>
+              <h3 class="location-card__name">Baggot Street Lower</h3>
+              <p class="location-card__address">112A Baggot Street Lower, Dublin 2</p>
               <div class="location-card__hours">
                 <div class="hours-row"><span>Mon – Fri</span><span>7:00 – 18:00</span></div>
                 <div class="hours-row"><span>Sat – Sun</span><span>8:00 – 17:00</span></div>
@@ -467,11 +496,11 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
-              <h3 class="location-card__name">Second Location</h3>
-              <p class="location-card__address">Update with your full address</p>
+              <h3 class="location-card__name">Dawson Street</h3>
+              <p class="location-card__address">26 Dawson Street, Dublin 2</p>
               <div class="location-card__hours">
-                <div class="hours-row"><span>Mon – Fri</span><span>7:30 – 17:30</span></div>
-                <div class="hours-row"><span>Sat – Sun</span><span>8:30 – 16:30</span></div>
+                <div class="hours-row"><span>Mon – Fri</span><span>7:00 – 18:00</span></div>
+                <div class="hours-row"><span>Sat – Sun</span><span>8:00 – 17:00</span></div>
               </div>
             </div>
           </div>
@@ -546,7 +575,7 @@
         <div class="footer__nav-col">
           <h4>Menu</h4>
           <ul>
-            <li><a href="#menu">Wraps</a></li>
+            <li><a href="#menu">Ciabattas</a></li>
             <li><a href="#menu">All-Day Breakfast</a></li>
             <li><a href="#menu">Beverages</a></li>
             <li><a href="#menu">Salads</a></li>
